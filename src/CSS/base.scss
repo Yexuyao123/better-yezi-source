@@ -1,0 +1,107 @@
+$designWidth:19.2;
+@function designFontSize($px){
+  //用于做布局
+  @return $px/$designWidth +rem;
+}
+
+$smallSize:14px;
+$mediumSize:16px;
+$largeSize:20px;
+
+
+
+//全局边框
+$border:#69FEF9;
+$middleBorder: rgb(83, 186, 184);
+$shallowBorder: rgb(55, 122, 121);
+//全局背景色
+$deep-bg:#04033D;
+$middle-bg:#062970;
+$shallow-bg:#1c5981;
+
+
+//卡片背景
+$commonBGColor:rgb(23,51,99);
+$activeBGColor:rgb(53,129,161);
+$gray: #F4F4F4;
+//全局通用文字颜色
+$fontColorCommon:#2c3e50;
+$fontColor:#999;
+$titleColor:#666;
+$white:#fff;
+
+
+//点缀色
+$beauty-pink:rgb(216, 79, 128);
+$beauty-purple:rgb(125,93,224);
+$beauty-yellow:rgb(227,215,69);
+$beauty-red:rgb(218,73,78);
+$beauty-orange:rgb(250,172,6);
+$beauty-blue:rgb(78,225,192);
+//5号色
+$base-red:#ff4d4f;
+$base-volcano:#ff7a45;
+$base-orange:#ffa940;
+$base-gold:#ffc53d;
+$base-yellow:#ffec3d;
+$base-lime:#bae637;
+$base-green:#73d13d;
+$base-cyan:#36cfc9;
+$base-blue:#40a9ff;
+$base-geek:#597ef7;
+$base-purple:#9254de;
+$base-magenta:#f759ab;
+//主色系
+$color-primary2:#e4e5e6;
+$color-primary3:#9aa7ab;
+$color-primary4:#65909e;
+$color-primary5:#467c91;
+$color-primary6:#2a6885;
+$color-primary7:#135578;
+$color-primary1:#00416a; //主色
+$color-primary8:#002845;
+//灰色系
+$gray-1:#ffffff;
+$gray-2:#fafafa;
+$gray-3:#f5f5f5;
+$gray-4:#f0f0f0;
+$gray-5:#d9d9d9;
+$gray-6:#bfbfbf;
+$gray-7:#8c8c8c;
+$gray-8:#595959;
+$gray-9:#434343;
+$gray-10:#262626;
+$gray-11:#1f1f1f;
+$gray-12:#141414;
+$gray-13:#000000;
+//卡片背景
+$d-color0:linear-gradient(to top, #d9d9d9, #00416a);
+$d-color1:linear-gradient(to top, #e4e5e6, #00416a);
+$d-color2: linear-gradient(to bottom, #bbd2c5, #536976);
+$d-color3: linear-gradient(to bottom, #9796f0, #fbc7d4);
+$d-color4:radial-gradient(circle, #e4e5e6, #00416a);
+$d-color-test: linear-gradient(to top, #005aa7, #fffde4);
+
+$p-b-color-1:#1a3e6c;
+$p-b-color-2:#344174;
+$p-b-color-3:#4a487e;
+$p-b-color-4:#6f4c87;
+$p-b-color-5:#a15194;
+$p-b-color-6:#d255a1;
+$p-b-color-7:#e67eb7;
+$p-b-color-8:#f2a8cd;
+$p-b-color-9:#f7d2e3;
+$p-b-color-10:#faedf3;
+
+
+$color-bg: #04033d;
+$color-1: #071449;
+$color-2: #0d295a;
+$color-3: #143c6b;
+$color-4: #1c5981;
+$color-5: #267fa0;
+$color-6: #31a5be;
+$color-7: #59c1d2;
+$color-8: #86dee7;
+$color-9: #b7f3f6;
+$color-10: #e3fafb;

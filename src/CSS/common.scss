@@ -1,0 +1,203 @@
+@import "./base.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol li,
+ul li {
+  list-style: none;
+}
+
+.beauty-border{
+  border: $border 1px solid;
+  border-radius: 3px;
+  position: relative;
+  //这个方案会导致鼠标事件被蒙蔽了
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow:
+      16px 0 0 -15px $middleBorder,
+      -16px 0 0 -15px $middleBorder,
+      0 16px 0 -15px $middleBorder,
+      0 -16px 0 -15px $middleBorder;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow:
+      31px 0 0 -30px $shallowBorder,
+      -31px 0 0 -30px $shallowBorder,
+      0 31px 0 -30px $shallowBorder,
+      0 -31px 0 -30px $shallowBorder;
+  }
+}
+.small-beauty-border{
+  border: $border 1px solid;
+  border-radius: 6px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow:
+            11px 0 0 -10px $middleBorder,
+            -11px 0 0 -10px $middleBorder,
+            0 11px 0 -10px $middleBorder,
+            0 -11px 0 -10px $middleBorder;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow:
+            21px 0 0 -20px $shallowBorder,
+            -21px 0 0 -20px $shallowBorder,
+            0 21px 0 -20px $shallowBorder,
+            0 -21px 0 -20px $shallowBorder;
+  }
+}
+
+.flex-center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.flex-between {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.flex-end {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+.flex-start {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+.flex-top-center {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.font-size-s {
+  font-size:$smallSize;
+}
+.font-size-m {
+  font-size:$mediumSize;
+}
+.font-size-l {
+  font-size:$largeSize;
+}
+.text-center{
+  text-align: center;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.common-input{
+  line-height: 40px;
+  border:1px solid #eaeaea;
+  padding: 0 10px;
+  border-radius: 4px;
+  outline:none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+.ellipsis-1,
+.ellipsis-2,
+.ellipsis-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.ellipsis-1 {
+  -webkit-line-clamp: 1;
+}
+.ellipsis-2 {
+  -webkit-line-clamp: 2;
+}
+.ellipsis-3 {
+  -webkit-line-clamp: 3;
+}
+
+.iconfont {
+  vertical-align: middle;
+}
+
+//none：文本不能被选择
+//text：可以选择文本
+//all：当所有内容作为一个整体时可以被选择。如果双击或者在上下文上点击子元素，那么被选择的部分将是以该子元素向上回溯的最高祖先元素。
+//element：可以选择文本，但选择范围受元素边界的约束
+.not-select {
+  -webkit-user-select: none; /*webkit浏览器*/
+  -moz-user-select: none; /*火狐*/
+  -ms-user-select: none; /*IE10*/
+  user-select: none;
+  -khtml-user-select: none; /*早期浏览器*/
+}
+
+.common-shadow {
+  box-shadow: 0 -2px 10px #00000015;
+}
+.light-color-shadow{
+  //浅色投影
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.input-error {
+  box-sizing: border-box;
+  border: 1px $beauty-red solid;
+  border-radius: 3px;
+}
+
