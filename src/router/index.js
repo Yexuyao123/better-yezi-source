@@ -45,14 +45,6 @@ const routes = [
             },
           },
           {
-            path: "/todo/goodday",
-            name: "GoodDay",
-            component: () => import("@/views/HaveAGoodDay.vue"),
-            meta: {
-              title: "今日打卡",
-            },
-          },
-          {
             path: "/todo/monthdata",
             name: "MonthData",
             component: () => import("@/views/MonthData.vue"),

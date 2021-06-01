@@ -12,7 +12,7 @@
           <div class="item-container">
             <div class="item-img flex-center">
               <img
-                :src="`https://static.linzhihui.online/image/up/${upOby.id}.jpg`"
+                :src="`http://static.linzhihui.online/image/up/${upOby.id}.jpg`"
                 alt=""
               />
             </div>

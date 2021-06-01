@@ -34,7 +34,7 @@ export default {
     };
   },
   created() {
-    this.getUpMsg(this.upCount, 1);
+    this.getUpMsg(1, this.upCount);
   },
   mounted() {
     echarts.registerTheme("myChartColor", eChartColor);
@@ -275,8 +275,8 @@ export default {
     },
   },
   methods: {
-    getUpMsg(pageSize, page) {
-      apiUpFansList({ pageSize, page }).then(
+    getUpMsg(page, pageSize) {
+      apiUpFansList({ page, pageSize }).then(
         (res) => {
           this.upList = res.data.list;
           const archive = [];

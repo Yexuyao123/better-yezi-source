@@ -35,7 +35,7 @@
 import CommonCard from "@/components/common/BackgroundCardCommon.vue";
 import StudyUpWebsite from "@/components/Website/StudyUpWebsiteList.vue";
 import StudyCommonWebsiteList from "@/components/Website/StudyCommonWebsiteList.vue";
-import StudyUpChart from "@/components/upChart/StudyUpChart.vue";
+import StudyUpChart from "@/components/dataChart/StudyUpChart.vue";
 
 import { ABOUT_CSS, ABOUT_MORNING } from "@/helpers/websiteList.js";
 

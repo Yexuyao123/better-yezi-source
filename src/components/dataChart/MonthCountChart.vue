@@ -137,7 +137,7 @@ export default {
         grid: {
           left: "15px",
           top: 35,
-          right: "10px",
+          right: "8px",
           bottom: 10,
           width: "auto",
           height: "auto",
@@ -314,8 +314,8 @@ export default {
     //border: #f8a5c2 1px solid;
     //width: 1250px;
     //height: 350px;
-    width: 94%;
-    height: 88%;
+    width: 99%;
+    height: 95%;
     overflow: hidden;
   }
 }

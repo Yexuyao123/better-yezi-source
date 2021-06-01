@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import SideNav from "@/components/SideNav.vue";
+import SideNav from "@/components/common/SideNav.vue";
 
 export default {
   name: "Index",

@@ -107,7 +107,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../CSS/base.scss";
+@import "../../CSS/base.scss";
 .side-nav {
   background: inherit;
   height: 100%;

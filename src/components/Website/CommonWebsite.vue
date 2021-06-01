@@ -61,7 +61,6 @@ export default {
 @import "../../CSS/base.scss";
 .common-website {
   width: 100%;
-  //height: calc(100vh - 80px);
   padding: 15px 15px 15px 0;
   display: grid;
   grid-template: auto/1fr 1fr 1fr 1fr 1fr 1fr;

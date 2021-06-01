@@ -75,10 +75,6 @@ setTimeout(() => {
   loadingEl.parentNode.removeChild(loadingEl);
 }, 2000);
 
-// window.addEventListener("scroll", function () {
-//   console.log(123);
-// });
-
 new Vue({
   router,
   store,

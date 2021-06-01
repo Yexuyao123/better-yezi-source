@@ -136,80 +136,63 @@ export const ABOUT_B_UP = {
     {
       id: "1140672573",
       name: "小王Albert说时事",
-      url: "https://space.bilibili.com/1140672573/",
     },
     {
       id: "15773384",
       name: "哔哩哔哩电影",
-      url: "https://space.bilibili.com/15773384/",
     },
     {
       id: "37663924",
       name: "硬核半佛仙人的套路",
-      url: "https://space.bilibili.com/37663924/",
     },
     {
       id: "520155988",
       name: "所长林超讲商业",
-      url: "https://space.bilibili.com/520155988/",
     },
     {
       id: "400230277",
       name: "杨晓洋的水果世界",
-      url: "https://space.bilibili.com/400230277/",
     },
     {
       id: "387107844",
       name: "老张英语听力",
-      url: "https://space.bilibili.com/387107844/",
       // img: require("@/assets/up-image/387107844.jpg"),
     },
     {
       id: "19577966",
       name: "李子柒的乡村故事",
-      url: "https://space.bilibili.com/19577966/",
-      // img: require("@/assets/up-image/19577966.jpg"),
     },
     {
       id: "290526283",
       name: "美食作家王刚",
-      url: "https://space.bilibili.com/290526283/",
-      // img: require("@/assets/up-image/290526283.jpg"),
     },
     {
       id: "2435767",
       name: "四月讲近现代史",
-      url: "https://space.bilibili.com/2435767/",
     },
     {
       id: "517327498",
       name: "罗翔说刑法",
-      url: "https://space.bilibili.com/517327498/",
     },
     {
       id: "316568752",
       name: "马前卒睡前消息",
-      url: "https://space.bilibili.com/316568752",
     },
     {
       id: "10330740",
       name: "观察者网消化一下",
-      url: "https://space.bilibili.com/10330740",
     },
     {
       id: "11336264",
       name: "TESTV数码测评",
-      url: "https://space.bilibili.com/11336264",
     },
     {
       id: "414702734",
       name: "哈仔十一的日常",
-      url: "https://space.bilibili.com/414702734",
     },
     {
       id: "18202105",
       name: "绵阳料理",
-      url: "https://space.bilibili.com/18202105",
     },
   ],
 };

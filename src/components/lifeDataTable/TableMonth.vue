@@ -113,10 +113,10 @@ import CommonCard from "@/components/common/BackgroundCardCommon.vue";
 import CartTitle from "@/components/common/CardTitle.vue";
 import { dailyList, getLabelList, getTabList } from "@/api/todo.js";
 import * as dayjs from "dayjs";
-import MonthPunchChart from "@/components/upChart/YearPunchChart.vue";
-import MonthCountChart from "@/components/upChart/MonthCountChart.vue";
-import YearPunchPercentChart from "@/components/upChart/YearPunchPercentChart.vue";
-import YearPunchCountChart from "@/components/upChart/YearPunchCountChart.vue";
+import MonthPunchChart from "@/components/dataChart/YearPunchChart.vue";
+import MonthCountChart from "@/components/dataChart/MonthCountChart.vue";
+import YearPunchPercentChart from "@/components/dataChart/YearPunchPercentChart.vue";
+import YearPunchCountChart from "@/components/dataChart/YearPunchCountChart.vue";
 export default {
   name: "OneMonthBlock",
   components: {

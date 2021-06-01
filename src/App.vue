@@ -18,5 +18,8 @@
   overflow-x: auto;
   $color-primary1: #00416a; /* fallback for old browsers */
   background: $d-color0;
+  width: 100%;
+  height: 100%;
+  //border: #f8a5c2 1px solid;
 }
 </style>
