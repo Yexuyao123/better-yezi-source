@@ -10,9 +10,9 @@
       <div class="left-tab-container">
         <CollectClassifier @changeView="currentIndex"></CollectClassifier>
       </div>
-      <div class="weather-container">
-        <DateBlock></DateBlock>
-      </div>
+      <!--      <div class="weather-container">-->
+      <!--        <DateBlock></DateBlock>-->
+      <!--      </div>-->
       <div class="input-underline">
         <div
           class="input-underline-close"
@@ -25,12 +25,12 @@
 
 <script>
 import SearchInput from "@/components/Header/SearchInput.vue";
-import DateBlock from "@/components/Header/Date.vue";
+// import DateBlock from "@/components/Header/Date.vue";
 import CollectClassifier from "@/components/Header/CollectClassifier.vue";
 
 export default {
   name: "NavigationHeader",
-  components: { SearchInput, CollectClassifier, DateBlock },
+  components: { SearchInput, CollectClassifier },
   data() {
     return {
       ifUnderline: false,
@@ -61,9 +61,9 @@ export default {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template: 30px 49px 1px /3fr 4fr;
+    grid-template: 10px 49px 1px /3fr 4fr;
     grid-template-areas:
-      "weather weather"
+      ". ."
       "lefttab input"
       "underline underline";
     .input-container {
@@ -76,9 +76,9 @@ export default {
     .left-tab-container {
       grid-area: lefttab;
     }
-    .weather-container {
-      grid-area: weather;
-    }
+    //.weather-container {
+    //  grid-area: weather;
+    //}
     .input-underline {
       grid-area: underline;
       width: 99%;

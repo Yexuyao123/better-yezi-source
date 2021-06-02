@@ -1,24 +1,15 @@
 import { httpRequest } from "@/helpers/request.js";
 
 const URL = {
-  GET_UpFansList: "/api/up/fansList",
+  GET_UpFansList: "/api3/up",
 };
 
-// export interface UpSql {
-//   name: string,
-//     sign: string,
-//     face: string,
-//     mid: number,
-//     follower: number,
-//     archive: number,
-//     likes: number,
-//     id?: number
-//   updated?: string
-//   created?: string
-//   isFans?: number
-//   fans_time?: string
-// }
-
-export const apiUpFansList = ({ page = 1, pageSize } = { page: 1 }) => {
-  return httpRequest(URL.GET_UpFansList, "GET", { pageSize, page });
+export const apiUpFansList = (
+  { page = 1, pageSize = 10 } = { page: 1, pageSize: 10 }
+) => {
+  return httpRequest(URL.GET_UpFansList, "GET", {
+    pageSize,
+    page,
+    orderKey: "follower",
+  });
 };

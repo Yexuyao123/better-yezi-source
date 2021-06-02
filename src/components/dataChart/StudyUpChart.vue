@@ -1,10 +1,10 @@
 <template>
   <div class="study-up-chart">
     <CartTitle
-      :title="aboutUp.name + '最新大数据'"
+      title="B站Up主粉丝数Top10 最新数据"
       :color="underLineColor"
     ></CartTitle>
-    <div id="upChart" class="up-list-chart"></div>
+    <div class="up-list-chart"><div id="upChart"></div></div>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      aboutUp: ABOUT_B_UP,
+      // aboutUp: ABOUT_B_UP,
       upList: null,
       upCount: Object.keys(ABOUT_B_UP.websiteObj).length,
       archiveArr: null,
@@ -160,7 +160,8 @@ export default {
           {
             type: "category",
             axisTick: { show: false },
-            axisLabel: { overflow: "truncate", interval: "0", width: 50 },
+            // axisLabel: { overflow: "truncate", interval: "0", width: 50 },
+            axisLabel: { overflow: "truncate", interval: "0", width: 80 },
             data: this.nameArr,
           },
         ],
@@ -315,7 +316,12 @@ export default {
   display: flex;
   flex-direction: column;
   .up-list-chart {
+    width: 100%;
     flex: 1;
+    #upChart {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 </style>

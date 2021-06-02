@@ -63,12 +63,12 @@ export default {
   width: 100%;
   .Study-website-container {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     padding: 16px 15px 16px 0;
     display: grid;
     grid-gap: 20px;
     grid-template:
-      calc((100vh - 80px) / 3 * 2 - 30px) calc((100vh - 80px) / 3 - 30px)
+      calc((100vh - 60px) / 3 * 2 - 30px) calc((100vh - 60px) / 3 - 30px)
       / calc(100% / 3 * 2 - 20px) calc(100% / 3);
     grid-template-areas:
       "main up"

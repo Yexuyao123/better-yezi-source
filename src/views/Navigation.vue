@@ -46,13 +46,12 @@ export default {
   color: $color-primary2;
   .header {
     width: 100%;
-    height: 80px;
+    height: 60px;
   }
   .section {
     width: 100%;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 60px);
     padding-left: 10px;
-    //border: #f8a5c2 1px solid;
   }
   .waiting {
     font-size: 20px;

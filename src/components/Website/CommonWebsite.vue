@@ -61,6 +61,7 @@ export default {
 @import "../../CSS/base.scss";
 .common-website {
   width: 100%;
+  height: calc(100vh - 60px);
   padding: 15px 15px 15px 0;
   display: grid;
   grid-template: auto/1fr 1fr 1fr 1fr 1fr 1fr;
@@ -72,7 +73,7 @@ export default {
       width: 100%;
       .guide-list-container {
         width: 100%;
-        height: calc(100vh - 201px);
+        height: calc(100vh - 165px);
         overflow-y: auto;
       }
       .guide-list-container::-webkit-scrollbar {
