@@ -95,7 +95,7 @@ export class createAxios {
       });
       if (res.data.token) {
         localStorage.setItem("token", res.data.token);
-        console.log(localStorage.getItem("token"));
+        // console.log(localStorage.getItem("token"));
       }
     }
   }
@@ -170,8 +170,7 @@ export class createAxios {
             }
           },
           (err) => {
-            const tip = "请求" + errorTitle + "失败";
-            console.log(tip);
+            console.log("请求" + errorTitle + "失败");
             // console.log(err);
             reject(err);
           }

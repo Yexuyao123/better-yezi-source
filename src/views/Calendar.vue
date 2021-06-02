@@ -64,10 +64,7 @@ export default {
       ];
     },
   },
-  created() {
-    this.getMonthDailyData();
-    this.getMonthDeadlineWorkData();
-  },
+  created() {},
   watch: {
     selectMonth: {
       handler(val, oldVal) {

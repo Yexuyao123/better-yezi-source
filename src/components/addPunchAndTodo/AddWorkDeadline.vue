@@ -80,18 +80,16 @@ export default {
     },
     commitFormData() {
       this.$emit("cancelChangeWork");
-      console.log(this.form);
       //需要{  id, deadline_date  }
       if (this.form.selectTime) {
         const deadlineDate = translateTime(this.form.selectTime)["date-1"];
-        console.log(deadlineDate);
+        // console.log(deadlineDate);
         this.changeDeadlineWork(this.id, deadlineDate);
       }
     },
     changeDeadlineWork(id, deadline_date) {
       workEditDeadline({ id, deadline_date }).then(
         (res) => {
-          console.log(res);
           if (res.err === 0) {
             //todo:待改重新请求更新workList
             this.$emit("updateWorkData");

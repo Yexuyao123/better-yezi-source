@@ -353,7 +353,6 @@ export default {
       this.copyMonthWorkMap();
     },
     updateWorkData: function () {
-      console.log(2 + "onedayfinish");
       this.$emit("updateWorkData");
     },
   },

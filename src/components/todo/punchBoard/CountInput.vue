@@ -70,7 +70,6 @@ export default {
     content: {
       handler(val, oldVal) {
         if (val !== oldVal) {
-          console.log(val);
           this.inputContent = val;
         }
       },

@@ -65,7 +65,6 @@ export default {
       this.haveInitData = true;
     },
     fn(arr, key) {
-      // console.log(arr);
       return arr.map((item) => {
         const { content, id } = item;
         return {

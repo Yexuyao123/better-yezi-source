@@ -101,7 +101,6 @@ export default {
       handler(val, oldVal) {
         if (val !== oldVal) {
           this.initCommonTodo();
-          console.log(this.totalCommonWorkList);
         }
       },
       deep: true,
