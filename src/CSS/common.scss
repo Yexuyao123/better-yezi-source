@@ -201,3 +201,68 @@ html {
   border-radius: 3px;
 }
 
+.info-l-blue{
+  font-size: 14px;
+  line-height: 1.8;
+  color:$color-5;
+  font-weight: bold;
+}
+.info-m-blue{
+  font-size: 11px;
+  line-height: 1.8;
+  color: $color-5;
+  font-weight: bold;
+}
+.info-m-tip{
+  font-size: 11px;
+  line-height: 1.8;
+  color: $beauty-purple;
+  font-weight: bold;
+}
+.info-m-gray{
+  font-size: 11px;
+  line-height: 1.8;
+  color: #807f7f;
+}
+.info-m-gray-bold{
+  font-size: 12px;
+  line-height: 1.8;
+  color: #7b7a7a;
+  font-weight: bold;
+}
+.info-m-red{
+  font-size: 11px;
+  line-height: 1.8;
+  color:$beauty-red;
+  font-weight: bold;
+}
+.info-a-blue{
+  line-height: 1.8;
+  font-size: 11px;
+  color:$base-geek;
+}
+.bold-weight{
+  font-weight: bold;
+}
+.blank-before {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 5px;
+  }
+}
+.disc-icon {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $gray-8;
+    margin-right: 5px;
+    margin-bottom: 2px;
+  }
+}
+
+
