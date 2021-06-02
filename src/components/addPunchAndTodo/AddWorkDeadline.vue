@@ -7,7 +7,6 @@
           v-model="form.selectTime"
           type="datetime"
           placeholder="选择日期时间"
-          default-time="12:00:00"
           :default-value="defaultTime"
         >
         </el-date-picker>

@@ -158,6 +158,8 @@ export default {
     };
   },
   created() {
+    console.log(this.weekDeadlineMap);
+    console.log(this.timeoutMap);
     this.haveInitData = false;
     this.initAllData();
   },
@@ -184,18 +186,18 @@ export default {
   computed: {},
   methods: {
     initDeadlineTodo() {
-      this.deadlineTodo = this.fn(this.weekDeadlineMap, "deadline_time");
+      this.deadlineTodo = this.fn(this.weekDeadlineMap, "deadline_date");
     },
     initTimeoutTodo() {
-      this.timeoutTodo = this.fn(this.timeoutMap, "deadline_time");
+      this.timeoutTodo = this.fn(this.timeoutMap, "deadline_date");
     },
     fn(arr, key) {
       return arr.map((item) => {
         const { content, id } = item;
         return {
           content,
-          timestamp: dayjs(item[key]).format("YYYY-MM-DD HH:MM"),
-          createTime: dayjs(item["created"]).format("YYYY-MM-DD HH:MM"),
+          timestamp: dayjs(item[key]).format("YYYY-MM-DD HH:mm"),
+          createTime: dayjs(item["created"]).format("YYYY-MM-DD HH:mm"),
           id,
         };
       });

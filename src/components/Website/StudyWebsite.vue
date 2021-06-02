@@ -94,11 +94,11 @@ export default {
       justify-content: space-between;
       .css-block-container {
         width: 100%;
-        height: calc(50% - 8px);
+        height: calc(60% - 8px);
       }
       .tool-block-container {
         width: 100%;
-        height: calc(50% - 8px);
+        height: calc(40% - 8px);
       }
     }
   }

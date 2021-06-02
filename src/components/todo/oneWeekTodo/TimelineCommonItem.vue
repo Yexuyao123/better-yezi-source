@@ -119,8 +119,8 @@ export default {
         const { content, id } = item;
         return {
           content,
-          timestamp: dayjs(item[key]).format("YYYY-MM-DD HH:MM"),
-          createTime: dayjs(item["created"]).format("YYYY-MM-DD HH:MM"),
+          timestamp: dayjs(item[key]).format("YYYY-MM-DD HH:mm"),
+          createTime: dayjs(item["created"]).format("YYYY-MM-DD HH:mm"),
           id,
         };
       });

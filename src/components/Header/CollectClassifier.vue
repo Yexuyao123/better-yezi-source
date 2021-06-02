@@ -51,7 +51,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../CSS/base.scss";
 .collect-classifier {
-  background-color: transparent;
+  //background-color: transparent;
   height: 100%;
   width: 100%;
   display: flex;
@@ -66,6 +66,7 @@ export default {
       padding: 5px 0;
       width: 100%;
       height: 100%;
+      background-color: $color-primary6;
       transition: all 0.5s;
       .item-title {
         padding: 5px 0;

@@ -5,7 +5,7 @@ const URL = {
 };
 
 export const apiUpFansList = (
-  { page = 1, pageSize = 10 } = { page: 1, pageSize: 10 }
+  { page = 0, pageSize = 10 } = { page: 0, pageSize: 10 }
 ) => {
   return httpRequest(URL.GET_UpFansList, "GET", {
     pageSize,

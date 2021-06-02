@@ -24,6 +24,7 @@
       @keyup.enter="gotoSearchResult"
       @focus="changeUnderline"
       @blur="closeUnderline"
+      autocomplete="off"
     />
     <span class="search-icon flex-center" @click="gotoSearchResult">
       <span>搜索</span>
@@ -81,8 +82,8 @@ export default {
   overflow: hidden;
   width: 95%;
   .placeholder {
-    border: $color-primary4 1px solid;
-    background-color: $color-primary4;
+    border: $base-geek 1px solid;
+    background-color: $base-geek;
     padding: 10px 15px;
     width: 180px;
     .el-dropdown {
@@ -118,16 +119,16 @@ export default {
   .search-icon {
     width: 80px;
     transition: all 0.4s;
-    background-color: $color-primary4;
-    border: $color-primary4 1px solid;
+    background-color: $base-geek;
+    border: $base-geek 1px solid;
     span {
       font-size: $largeSize;
       line-height: 1;
       color: $color-primary2;
     }
     &:hover {
-      background-color: $color-primary6;
-      border: $color-primary6 1px solid;
+      background-color: #5476e7;
+      border: #5476e7 1px solid;
       span {
         color: $gray-2;
       }

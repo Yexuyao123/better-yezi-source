@@ -181,6 +181,8 @@ export default {
               const b1 = new Date(b.deadline_date).getTime();
               return a1 - b1;
             }) || [];
+          console.log(this.timeoutMap);
+          console.log(this.weekDeadlineMap);
           this.haveGetDeadline = true;
         },
         (err) => {

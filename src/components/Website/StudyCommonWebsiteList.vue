@@ -69,17 +69,19 @@ export default {
           div {
             box-sizing: border-box;
             font-size: 16px;
-            padding: 16px 10px;
+            padding: 12px 10px;
             line-height: 1;
             transition: all 0.4s;
-            background-color: #e4e5e690;
-            border-radius: 2px;
+            background-color: #ffffff40;
+            //background-color: white;
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
             color: $gray-9;
             &:hover {
               cursor: pointer;
               background-image: linear-gradient(
                 to top,
-                rgba(236, 243, 233, 0.2),
+                rgba(236, 243, 233, 0.3),
                 rgba(236, 243, 233, 0)
               );
               box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);

@@ -34,7 +34,7 @@ export default {
     };
   },
   created() {
-    this.getUpMsg(1, this.upCount);
+    this.getUpMsg(0, this.upCount);
   },
   mounted() {
     echarts.registerTheme("myChartColor", eChartColor);
@@ -171,7 +171,6 @@ export default {
             name: "粉丝数",
             position: "left",
             offset: 110,
-
             axisLine: {
               show: true,
               lineStyle: {

@@ -78,7 +78,8 @@ export default {
           justify-content: flex-start;
           align-items: flex-start;
           transition: all 0.5s;
-          background-color: #e4e5e690;
+          //background-color: #e4e5e690;
+          background-color: #ffffff30;
           border-radius: 2px;
           .item-img {
             width: 70px;
